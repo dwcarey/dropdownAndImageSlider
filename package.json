@@ -1,0 +1,24 @@
+{
+  "name": "dropdownandimageslider",
+  "version": "1.0.0",
+  "description": "Drop down menu and Image Slider",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dwcarey/dropdownAndImageSlider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwcarey/dropdownAndImageSlider/issues"
+  },
+  "homepage": "https://github.com/dwcarey/dropdownAndImageSlider#readme",
+  "keywords": [],
+  "devDependencies": {
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
