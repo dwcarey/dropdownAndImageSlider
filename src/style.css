@@ -26,6 +26,7 @@
     padding: 6px;
     gap: 6px;
     font-size: 1.3rem;
+    position: absolute;
 }
 
 
@@ -43,6 +44,7 @@
     display: block;
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center;
+
 }
 
 @keyframes growDown {
@@ -56,3 +58,50 @@
         transform: scaleY(1);
     }
 }
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#imageSliderContainer {
+    display: flex;
+    height: 70vh;
+    width: 70vh;
+    overflow: hidden;
+
+}
+
+#imageSliderContainerHolder {
+    height: 80vh;
+    width: 80vh;
+    background-color: grey;
+    align-self: center;
+    justify-self: center;
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: 5vh 1fr 5vh;
+}
+
+#navNumbersContainer {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: span 3;
+}
+
+#backButton {
+    height: 70vh;
+}
+#nextButton {
+    height: 70vh;
+}
+.navNumberButton {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 3rem;
+  border: 0;
+}
+
+
