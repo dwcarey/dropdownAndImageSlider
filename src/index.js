@@ -1,5 +1,5 @@
-import { hello } from "./test";
 import './style.css';
+import { createDropdown } from './firstPageLoad';
 
-
-hello();
+const buttonArray = ['Red', 'Blue', 'Green', 'Yellow', 'Purple', 'White'];
+createDropdown(buttonArray);

@@ -1,4 +1,58 @@
-.hello {
-    color: rebeccapurple;
-    background: url(./eelco-bohtlingk-RDlbL4B_bmI-unsplash.jpg);
+#backgroundRed {
+    background-color: rgb(141, 5, 5);
+}
+#backgroundBlue {
+    background-color: rgb(34, 12, 156);
+}
+#backgroundGreen {
+    background-color: rgb(2, 94, 2);
+}
+#backgroundYellow {
+    background-color: rgb(194, 191, 3);
+}
+#backgroundPurple {
+    background-color: rgb(91, 5, 141);
+}
+#backgroundWhite {
+    background-color: rgb(255, 255, 255);
+}
+
+#mainDropdown{
+    text-align: center;
+    background-color: rgb(216, 72, 185);
+    display: flex;
+    flex-direction: column;
+    width: clamp(96px, 166px, 218px);
+    padding: 6px;
+    gap: 6px;
+    font-size: 1.3rem;
+}
+
+
+.dropdownOption {
+    display: none;
+    border: 0;
+    font-size: 1rem;
+}
+
+.dropdownOption:hover {
+    background-color: rgb(139, 63, 211);
+}
+
+.dropdownVisible {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
