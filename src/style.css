@@ -19,7 +19,8 @@
 
 #mainDropdown{
     text-align: center;
-    background-color: rgb(216, 72, 185);
+    background-color: rgb(161, 150, 211);
+    color: rgb(37, 3, 70);
     display: flex;
     flex-direction: column;
     width: clamp(96px, 166px, 218px);
@@ -34,6 +35,7 @@
     display: none;
     border: 0;
     font-size: 1rem;
+    color: rgb(37, 3, 70);
 }
 
 .dropdownOption:hover {
@@ -59,6 +61,10 @@
     }
 }
 
+body {
+    overflow: hidden;
+}
+
 .content {
     width: 100vw;
     height: 100vh;
@@ -75,9 +81,9 @@
 }
 
 #imageSliderContainerHolder {
-    height: 80vh;
+    height: 78vh;
     width: 80vh;
-    background-color: grey;
+
     align-self: center;
     justify-self: center;
     margin-top: 8vh;
@@ -87,21 +93,78 @@
 
 #navNumbersContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     grid-column: span 3;
 }
 
 #backButton {
     height: 70vh;
+    border: 0;
+    background-color: rgb(161, 150, 211);
+    font-size: 2.5rem;
+    color: rgb(37, 3, 70);
 }
 #nextButton {
     height: 70vh;
+    border: 0;
+    background-color: rgb(161, 150, 211);
+    font-size: 2.5rem;
+    color: rgb(37, 3, 70);
 }
 .navNumberButton {
   height: 5vh;
   width: 5vh;
   border-radius: 3rem;
   border: 0;
+  font-size: 1rem;
+  color: rgb(37, 3, 70);
+}
+
+.navNumberButton:hover {
+    background-color: rgb(161, 150, 211);
+}
+
+.sliderImage {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.selectedNav {
+    background-color: rgb(34, 0, 73);
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 0;
+    }
+    #imageSliderContainer {
+        height: 70vw;
+        width: 70vw;
+        align-self: flex-start;
+    }
+
+    #imageSliderContainerHolder {
+        height: 82vw;
+        width: 85vw;
+        grid-template-columns: 7.5vw 1fr 7.5vw;
+    }
+
+    #backButton {
+        height: 70vw;
+    }
+    #nextButton {
+        height: 70vw;
+    }
+    .navNumberButton {
+      height: 7.5vw;
+      width: 7.5vw;
+      border-radius: 3rem;
+      border: 0;
+    }
 }
 
 
