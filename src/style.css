@@ -98,21 +98,21 @@ body {
 }
 
 #backButton {
-    height: 70vh;
+    height: 80vh;
     border: 0;
     font-size: 2.5rem;
     color: rgb(37, 3, 70);
     position: relative;
-    left: 5vw;
+    left: 5vh;
     background-color: rgb(255, 255, 255, 0);
 }
 #nextButton {
-    height: 70vh;
+    height: 80vh;
     border: 0;
     font-size: 2.5rem;
     color: rgb(37, 3, 70);
     position: relative;
-    right: 5vw;
+    right: 5vh;
     background-color: rgb(255, 255, 255, 0);
 }
 .navNumberButton {
