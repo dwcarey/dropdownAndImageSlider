@@ -1,4 +1,14 @@
+let autoScroll;
+
+function autoScrollActivate() {
+  if (autoScroll) {
+    clearTimeout(autoScroll);
+  }
+  autoScroll = setTimeout(nextButtonFunction, 5000);
+}
+
 function showImage(currentImageIndex, newImageIndex) {
+
   const oldImageID = `sliderImage-${currentImageIndex}`;
   const oldImage = document.getElementById(oldImageID);
   oldImage.classList.remove('visible');
@@ -13,6 +23,7 @@ function showImage(currentImageIndex, newImageIndex) {
   const newTextID = `navNumber-${newImageIndex}`;
   const newText = document.getElementById(newTextID);
   newText.classList.add('selectedNav');
+  autoScrollActivate();
 }
 
 function backButtonFunction() {
@@ -23,7 +34,7 @@ function backButtonFunction() {
     const newImageIndex = (+oldImageIndex - 1);
     showImage(oldImageIndex, newImageIndex);
   } else {
-    // do nothing
+    showImage(oldImageIndex, 9);
   }
 }
 
@@ -35,7 +46,7 @@ function nextButtonFunction() {
     const newImageIndex = (+oldImageIndex + 1);
     showImage(oldImageIndex, newImageIndex);
   } else {
-    // do nothing
+    showImage(oldImageIndex, 0);
   }
 }
 

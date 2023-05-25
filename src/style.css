@@ -1,17 +1,17 @@
 #backgroundRed {
-    background-color: rgb(141, 5, 5);
+    background-color: rgb(102, 0, 0);
 }
 #backgroundBlue {
-    background-color: rgb(34, 12, 156);
+    background-color: rgb(21, 0, 141);
 }
 #backgroundGreen {
-    background-color: rgb(2, 94, 2);
+    background-color: rgb(0, 54, 0);
 }
 #backgroundYellow {
-    background-color: rgb(194, 191, 3);
+    background-color: rgb(80, 78, 0);
 }
 #backgroundPurple {
-    background-color: rgb(91, 5, 141);
+    background-color: rgb(51, 0, 80);
 }
 #backgroundWhite {
     background-color: rgb(255, 255, 255);
@@ -100,16 +100,20 @@ body {
 #backButton {
     height: 70vh;
     border: 0;
-    background-color: rgb(161, 150, 211);
     font-size: 2.5rem;
     color: rgb(37, 3, 70);
+    position: relative;
+    left: 5vw;
+    background-color: rgb(255, 255, 255, 0);
 }
 #nextButton {
     height: 70vh;
     border: 0;
-    background-color: rgb(161, 150, 211);
     font-size: 2.5rem;
     color: rgb(37, 3, 70);
+    position: relative;
+    right: 5vw;
+    background-color: rgb(255, 255, 255, 0);
 }
 .navNumberButton {
   height: 5vh;
@@ -132,7 +136,7 @@ body {
     display: block;
 }
 
-.selectedNav {
+#navNumbersContainer>.selectedNav {
     background-color: rgb(34, 0, 73);
     color: aliceblue;
 }
@@ -142,28 +146,39 @@ body {
         margin: 0;
     }
     #imageSliderContainer {
-        height: 70vw;
-        width: 70vw;
+        height: 80vw;
+        width: 80vw;
         align-self: flex-start;
+    }
+    #mainDropdown {
+        width: 128px;
     }
 
     #imageSliderContainerHolder {
         height: 82vw;
-        width: 85vw;
+        width: 95vw;
         grid-template-columns: 7.5vw 1fr 7.5vw;
+        margin-top: 10vh;
+        align-self: center;
     }
 
     #backButton {
-        height: 70vw;
+        height: 80vw;
+        text-align: center;
+        font-size: 1rem;
     }
     #nextButton {
-        height: 70vw;
+        height: 80vw;
+        text-align: center;
+        font-size: 1rem;
     }
     .navNumberButton {
       height: 7.5vw;
       width: 7.5vw;
       border-radius: 3rem;
       border: 0;
+      font-size: 0.8rem;
+      text-align: center;
     }
 }
 
